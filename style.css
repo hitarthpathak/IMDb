@@ -1,0 +1,556 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+nav {
+    height: 3.5rem;
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 0 2rem;
+    font-size: 0.9rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.imdb-logo {
+    height: 2.3rem;
+    width: 4rem;
+}
+
+.imdb-logo #imdb-logo-icon {
+    border-radius: 5px;
+    height: auto;
+    width: 100%;
+}
+
+.menu {
+    border-radius: 25px;
+    height: 2.3rem;
+    width: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7%;
+}
+
+.menu:hover {
+    background-color: rgb(40, 40, 40);
+}
+
+.menu #menu-icon {
+    height: auto;
+    width: 1.5rem;
+}
+
+.search-box {
+    height: 2.3rem;
+    width: 45rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-box select {
+    border: none;
+    border-right: 1px solid gray;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    height: 100%;
+    width: 4rem;
+    padding: 0.5rem;
+    font-size: 0.9rem;
+    font-weight: bold;
+    outline: none;
+    cursor: pointer;
+}
+
+.search-box select:hover {
+    background-color: rgb(240, 240, 240);
+}
+
+.search-box input {
+    border: none;
+    height: 100%;
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 0.9rem;
+    outline: none;
+}
+
+.search-box .search-btn {
+    height: 100%;
+    width: 3rem;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.search-btn #search-icon {
+    height: auto;
+    width: 1.5rem;
+}
+
+.imdb-pro-logo {
+    border-radius: 25px;
+    height: 2.3rem;
+    width: 5.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imdb-pro-logo:hover {
+    background-color: rgb(40, 40, 40);
+}
+
+.imdb-pro-logo #imdb-pro-logo-icon {
+    height: auto;
+    width: 3.7rem;
+}
+
+#divide {
+    height: 60%;
+    width: auto;
+}
+
+.watchlist-box {
+    border-radius: 25px;
+    height: 2.3rem;
+    width: 7.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7%;
+}
+
+.watchlist-box:hover {
+    background-color: rgb(40, 40, 40);
+}
+
+.watchlist-box #watchlist-icon {
+    height: auto;
+    width: 1rem;
+}
+
+.sign-in {
+    border-radius: 25px;
+    height: 2.3rem;
+    width: 4.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sign-in:hover {
+    background-color: rgb(40, 40, 40);
+}
+
+.languages {
+    height: 2.3rem;
+    width: auto;
+}
+
+.languages select {
+    border: none;
+    border-radius: 25px;
+    height: 100%;
+    width: 3.5rem;
+    padding: 0.5rem;
+    background-color: black;
+    color: white;
+    font-size: 0.9rem;
+    font-weight: bold;
+    outline: none;
+    cursor: pointer;
+}
+
+.languages select:hover {
+    background-color: rgb(40, 40, 40);
+}
+
+.introduction {
+    height: auto;
+    width: 100%;
+    background-image: url("Images/HITARTH\ \(Profile\ Photo\).jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.upper-layer {
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.900);
+    color: white;
+    padding: 3rem;
+}
+
+.info {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    gap: 1rem;
+    flex-direction: column;
+}
+
+.name {
+    height: auto;
+    width: auto;
+}
+
+.name h1 {
+    font-size: 3rem;
+    font-weight: normal;
+    line-height: 2.5rem;
+}
+
+.occupation {
+    height: auto;
+    width: auto;
+}
+
+.biography {
+    height: 15rem;
+    width: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    gap: 0.5rem;
+}
+
+.profile-pic {
+    height: 100%;
+    width: auto;
+}
+
+.profile-pic img {
+    border-radius: 10px;
+    height: 100%;
+    width: auto;
+}
+
+.bio {
+    border-radius: 10px;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(130, 130, 130, 0.200);
+    padding: 1rem;
+    overflow: hidden;
+}
+
+.bio:hover {
+    background-color: rgba(130, 130, 130, 0.500);
+}
+
+.media {
+    height: 100%;
+    width: 15rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.media .videos,
+.images {
+    border-radius: 10px;
+    height: 50%;
+    width: 100%;
+    background-color: rgba(130, 130, 130, 0.200);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.videos:hover,
+.images:hover {
+    background-color: rgba(130, 130, 130, 0.500);
+}
+
+.data {
+    height: auto;
+    width: 100%;
+    padding: 3rem;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+}
+
+.left {
+    height: auto;
+    width: 70%;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.right {
+    height: 100%;
+    width: 30%;
+}
+
+.data-set {
+    height: auto;
+    width: 100%;
+}
+
+.data-set-heading {
+    border-left: 5px solid yellow;
+    height: 3rem;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: 0.7rem;
+}
+
+.projects {
+    height: auto;
+    width: auto;
+    padding: 1rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.project {
+    border: 1px solid rgba(0, 0, 0, 0.200);
+    border-radius: 10px;
+    height: 10rem;
+    width: 50%;
+}
+
+.project a {
+    height: 100%;
+    width: 100%;
+    color: black;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 3%;
+}
+
+.project .img-box {
+    height: 100%;
+    width: 7rem;
+}
+
+.img-box img {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    height: auto;
+    width: 100%;
+}
+
+.project .project-info {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    gap: 5%;
+    flex-direction: column;
+}
+
+.project-info p #star-icon img {
+    height: 1rem;
+}
+
+.credit {
+    height: auto;
+    width: auto;
+    margin: 1rem;
+}
+
+.credits-projects {
+    height: auto;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.credits-project {
+    border: 1px solid rgba(0, 0, 0, 0.200);
+    border-radius: 10px;
+    height: 5rem;
+    width: 100%;
+}
+
+.credits-project a {
+    height: 100%;
+    width: 100%;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 1%;
+}
+
+.credits-project .img-box {
+    height: 100%;
+    width: 3.5rem;
+}
+
+.img-box img {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    height: 100%;
+    width: 100%;
+}
+
+.credits-project .project-info {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    height: 100%;
+    width: 100%;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    gap: 1%;
+    flex-direction: column;
+}
+
+.credits-project-info p #star-icon img {
+    height: 1rem;
+}
+
+.details {
+    height: auto;
+    width: auto;
+    padding: 1rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.detail {
+    border: 1px solid rgba(0, 0, 0, 0.200);
+    border-radius: 10px;
+    height: 3rem;
+    width: 100%;
+    color: black;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 3%;
+}
+
+.detail a {
+    color: blue;
+}
+
+.detail a:hover {
+    text-decoration: underline;
+}
+
+.facts {
+    height: auto;
+    width: auto;
+    padding: 1rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.fact {
+    border: 1px solid rgba(0, 0, 0, 0.200);
+    border-radius: 10px;
+    height: 3rem;
+    width: 100%;
+    color: black;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 3%;
+}
+
+.contributes {
+    height: auto;
+    width: auto;
+    padding-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contributes #suggest {
+    height: auto;
+    width: 100%;
+}
+
+.contribute {
+    border: 1px solid rgba(0, 0, 0, 0.200);
+    border-radius: 10px;
+    height: 3rem;
+    width: 100%;
+    margin: 1rem 0;
+    padding: 1rem;
+    font-weight: bold;
+}
+
+.contribute a {
+    color: black;
+}
+
+.contribute a:hover {
+    text-decoration: underline;
+}
+
+.data-set #edit-page {
+    border: none;
+    border-radius: 25px;
+    height: 2.5rem;
+    width: 25rem;
+    padding: 0 1rem;
+    background-color: rgb(250, 200, 0);
+    font-weight: bold;
+    text-align: start;
+    cursor: pointer;
+}
+
+.data-set #edit-page:hover {
+    background-color: rgb(230, 185, 0);
+}
+
+.data-set #edit-page a {
+    color: black;
+}
