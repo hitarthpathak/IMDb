@@ -1,0 +1,374 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+nav {
+    height: 3.5rem;
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 0 2rem;
+    font-size: 0.9rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.imdb-logo {
+    height: 2.3rem;
+    width: 4rem;
+}
+
+.imdb-logo #imdb-logo-icon {
+    border-radius: 5px;
+    height: auto;
+    width: 100%;
+}
+
+.menu {
+    border-radius: 25px;
+    height: 2.3rem;
+    width: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7%;
+}
+
+.menu:hover {
+    background-color: rgb(40, 40, 40);
+}
+
+.menu #menu-icon {
+    height: auto;
+    width: 1.5rem;
+}
+
+.search-box {
+    height: 2.3rem;
+    width: 45rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-box select {
+    border: none;
+    border-right: 1px solid gray;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    height: 100%;
+    width: 4rem;
+    padding: 0.5rem;
+    font-size: 0.9rem;
+    font-weight: bold;
+    outline: none;
+    cursor: pointer;
+}
+
+.search-box select:hover {
+    background-color: rgb(240, 240, 240);
+}
+
+.search-box input {
+    border: none;
+    height: 100%;
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 0.9rem;
+    outline: none;
+}
+
+.search-box .search-btn {
+    height: 100%;
+    width: 3rem;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.search-btn #search-icon {
+    height: auto;
+    width: 1.5rem;
+}
+
+.imdb-pro-logo {
+    border-radius: 25px;
+    height: 2.3rem;
+    width: 5.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imdb-pro-logo:hover {
+    background-color: rgb(40, 40, 40);
+}
+
+.imdb-pro-logo #imdb-pro-logo-icon {
+    height: auto;
+    width: 3.7rem;
+}
+
+#divide {
+    height: 60%;
+    width: auto;
+}
+
+.watchlist-box {
+    border-radius: 25px;
+    height: 2.3rem;
+    width: 7.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7%;
+}
+
+.watchlist-box:hover {
+    background-color: rgb(40, 40, 40);
+}
+
+.watchlist-box #watchlist-icon {
+    height: auto;
+    width: 1rem;
+}
+
+.sign-in {
+    border-radius: 25px;
+    height: 2.3rem;
+    width: 4.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sign-in:hover {
+    background-color: rgb(40, 40, 40);
+}
+
+.languages {
+    height: 2.3rem;
+    width: auto;
+}
+
+.languages select {
+    border: none;
+    border-radius: 25px;
+    height: 100%;
+    width: 3.5rem;
+    padding: 0.5rem;
+    background-color: black;
+    color: white;
+    font-size: 0.9rem;
+    font-weight: bold;
+    outline: none;
+    cursor: pointer;
+}
+
+.languages select:hover {
+    background-color: rgb(40, 40, 40);
+}
+
+.introduction {
+    height: auto;
+    width: 100%;
+    background-image: url("Images/HITARTH\ \(Profile\ Photo\).jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.upper-layer {
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.900);
+    color: white;
+    padding: 3rem;
+}
+
+.media-box {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    gap: 1rem;
+    flex-direction: column;
+}
+
+.media-type {
+    height: auto;
+    width: auto;
+}
+
+.media-type h1 {
+    font-size: 3rem;
+    font-weight: normal;
+    line-height: 2.5rem;
+}
+
+.media {
+    border: 2px solid rgba(250, 250, 250, 0.150);
+    height: auto;
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.media img,
+video {
+    height: 15rem;
+    width: auto;
+}
+
+footer {
+    height: auto;
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 1.5rem 3.5rem;
+}
+
+.footer-btn-box {
+    height: auto;
+    width: fit-content;
+    margin: auto;
+}
+
+footer button {
+    border: none;
+    border-radius: 25px;
+    height: 2.5rem;
+    width: auto;
+    padding: 0 2rem;
+    background-color: rgb(250, 200, 0);
+    font-weight: bold;
+    text-align: start;
+    cursor: pointer;
+}
+
+.footer-follow-boxes {
+    height: auto;
+    width: 70%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2%;
+}
+
+.footer-social-box {
+    border: 2px solid rgba(130, 130, 130, 0.300);
+    border-radius: 10px;
+    height: 100%;
+    width: 50%;
+    padding: 1rem 1rem 0.5rem 1rem;
+    text-align: center;
+}
+
+.footer-social-icons {
+    height: auto;
+    width: auto;
+    margin-top: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.footer-social-icons img {
+    height: 2rem;
+    width: auto;
+}
+
+.footer-social-icons #yt {
+    height: 3rem;
+    width: auto;
+}
+
+.footer-qr-code-box {
+    border: 2px solid rgba(130, 130, 130, 0.300);
+    border-radius: 10px;
+    height: 100%;
+    width: 50%;
+    padding: 1rem 1rem 0.5rem 1rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.text p {
+    margin-top: 5%;
+}
+
+.footer-anchor-box {
+    height: auto;
+    width: auto;
+}
+
+.footer-anchor-box a:hover {
+    text-decoration: underline;
+}
+
+.anchor-1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+}
+
+.anchor-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+}
+
+#right-wrong {
+    height: 1rem;
+    margin-right: 0.3rem;
+}
+
+.an-amazon-company {
+    height: auto;
+    width: fit-content;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3%;
+}
+
+.an-amazon-company #amazon {
+    height: 1rem;
+    width: auto;
+    margin-top: 5%;
+}
+
+.copyright {
+    height: auto;
+    width: fit-content;
+    margin: auto;
+    font-size: 0.8rem;
+}
