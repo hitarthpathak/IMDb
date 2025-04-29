@@ -178,13 +178,13 @@
 
                     <div class="media">
 
-                        <div class="videos">
+                        <div class="videos" onclick="videos()">
 
                             Videos
 
                         </div>
 
-                        <div class="images">
+                        <div class="photos" onclick="photos()">
 
                             Photos
 
@@ -1101,7 +1101,7 @@
                 <div class="detail">
 
                     <span><b>Height</b></span>
-                    <span>5' 12'' (1.83 m)</span>
+                    <span>5' 10'' (1.78 m)</span>
 
                 </div>
 
@@ -1378,5 +1378,17 @@
     </footer>
 
 </body>
+
+<script>
+
+    function videos() {
+        window.location = "/Videos.html";
+    }
+
+    function photos() {
+        window.location = "/Photos.html";
+    }
+
+</script>
 
 </html>
