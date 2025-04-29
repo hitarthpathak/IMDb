@@ -273,7 +273,7 @@ nav {
 }
 
 .media .videos,
-.images {
+.photos {
     border-radius: 10px;
     height: 50%;
     width: 100%;
@@ -287,7 +287,7 @@ nav {
 }
 
 .videos:hover,
-.images:hover {
+.photos:hover {
     background-color: rgba(130, 130, 130, 0.500);
 }
 
